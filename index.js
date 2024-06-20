@@ -1,9 +1,11 @@
-var express = require('expresss')
-var app = express()
+var express = require('express');
+var app = express();
 
-app.get('/', function(req,res){
-    res.sned('hello world');
+app.get('/', function(req, res){
+    res.send('hello world');
 });
 
-var port = process.env.port || 3000;
-console.log('Listening on localhost:' + port)
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+    console.log('Listening on localhost:' + port);
+});
