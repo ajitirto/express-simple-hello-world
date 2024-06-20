@@ -2,4 +2,6 @@
 
 npm install 
 
-nodemon index.js
+npm run start
+
+### curl localhost:3000  # just "hello world"
