@@ -1,0 +1,10 @@
+tasks:
+  - init: npm install
+  - command: |
+      echo "==========================================================================="
+      echo "Hello world"
+      echo "==========================================================================="
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
