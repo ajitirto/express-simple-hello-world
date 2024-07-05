@@ -30,15 +30,37 @@ This project is used by :
 kode somple untuk deployemet nginx
 
 ```javascipt
-    var express = require('expresss')
-    var app = express()
+    import express from 'express';
 
-    app.get('/', function(req,res){
-        res.sned('hello world');
+    const app = express();
+
+    const birdAscii = `
+            ___
+        __/o   \\_             | Documentation : (package.json)
+        \\______  \\           | "dependencies": {
+                \\  \\         | "express": "^4.17.1"
+                \\  \\         | ""nodemon": "^3.1.4"
+        ______   \\  \\_       |}
+    /       \\__|    o\\_      |
+    |           \\__ \\  \      |
+    \\________        __/      |
+                \\_____/       |
+
+    ============================
+    =>  curl localhost:3000/
+
+                `;
+
+    app.get('/', (req, res) => {
+    res.send(`<pre>${birdAscii}</pre>`);
     });
 
-    var port = process.env.port || 3000;
-    console.log('Listening on localhost:' + port)
+    const port = process.env.PORT || 3000;
+
+    app.listen(port, () => {
+    console.log(`Listening on localhost:${port}`);
+    });
+
 
 ```
 
