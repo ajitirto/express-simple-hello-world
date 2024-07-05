@@ -5,15 +5,15 @@ Belajar tentang express js
 1. routing
 2. listen port 3000
 
-## Part 1 : Pengertian exxpress js
+## Part 1 : Pengertian express js
 
 exxpress js : framewok javascipt khusus untuk web.
 
-## Part 1 : Mengapa menggunakan exxpress js
+## Part 1 : Mengapa menggunakan express js
 
-- dari pada native javascipt lebih baik menggunakan framewok, selain meringkas perkerjaan, framewok juga menajadi standard developer, supaya ketika bekerja dengan tim lebih punya pola.
+- dari pada native javascipt lebih baik menggunakan framewok, selain meringkas perkerjaan, framewok juga menajadi standard developer, supaya ketika bekerja dengan tim lebih berpola.
 
-- minimasis, cukup ringan saat dijalankan
+- minimalis, cukup ringan saat dijalankan
 
 - dapat intergrasi dengan library laninya di atas node js
 
@@ -27,7 +27,7 @@ This project is used by :
 
 ## Description about code
 
-kode somple untuk deployemet nginx
+kode simple express
 
 ```javascipt
     import express from 'express';
@@ -42,7 +42,7 @@ kode somple untuk deployemet nginx
                 \\  \\         | ""nodemon": "^3.1.4"
         ______   \\  \\_       |}
     /       \\__|    o\\_      |
-    |           \\__ \\  \      |
+    |           \\__ \\  \     |
     \\________        __/      |
                 \\_____/       |
 
@@ -65,3 +65,6 @@ kode somple untuk deployemet nginx
 ```
 
 memanggil library expres, membuat routing index dengan reposd hello world dan dibind dengan port 3000 atau apabila adan env port yang di custom juga bisa. berikan trigger lewat console.
+
+## github actions
+
