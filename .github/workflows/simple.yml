@@ -1,8 +1,7 @@
 name: Simple-express-run
 
 on:
-  schedule:
-    - cron: '1 * * * *'
+  [ push ]
 
 jobs:
   hello:
