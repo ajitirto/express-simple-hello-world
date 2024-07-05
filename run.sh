@@ -23,3 +23,7 @@ sudo docker run --name express-container-v1  -p 3000:3000 -d express:v1
 #       - "3000:3000"  
 #     command: ["node", "index.js"]
 #     working_dir: /app
+
+echo "$PAT_TOKEN"  | docker login ghcr.io -u ajitirto --password-stdin   
+
+ docker push ghcr.io/ajitirto/express:v1
